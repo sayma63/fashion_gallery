@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { AuthContext } from '../contexts/AuthProvider';
 
 const Signup = () => {
     const { register,formState:{errors}, handleSubmit } = useForm();
+    const {createUser}=useContext(AuthContext);
     const handleSignup= data=>{
         console.log(data)
+        createUser(data.email,data.password)
+
+        .then(result=>{
+            const user =result.user;
+            console.log(user);
+
+        })
+        .catch(error=>{
+            console.log(error)
+        })
     }
+    
     return (
         <div >
         <div className=' h-[100vh] bg-accent mt-16 flex justify-center items-center' >
@@ -25,16 +38,11 @@ const Signup = () => {
                             required:{
                                 value:true,
                                 message:'Name is required'
-                             },
-                             pattern: {
-                                 value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                 message: 'provide a valid email' // JS only: <p>error message</p> TS only support string
                              }
                          })} class="input input-bordered w-full max-w-xs" />
                           
                         {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
 
-                        {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
 
 
                         
