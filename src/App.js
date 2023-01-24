@@ -36,9 +36,10 @@ function App() {
 
 
        </Routes>
+      
        <Footer></Footer>
-
      </Navbar>
+     
     </div>
   );
 }

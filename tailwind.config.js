@@ -49,8 +49,22 @@ module.exports = {
          
         },
       },
+     { 
+      extend:{
+        fontFamily:{
+          adelia :["ADELIA","cursive"],
+          lobster:["Lobster","cursive"],
+        },
+      },
+    },
       
     ],
+    // extend:{
+    //   fontFamily:{
+    //     adelia :["ADELIA","cursive"],
+    //     lobster:["Lobster","cursive"],
+    //   },
+    // },
   },
   plugins: [require("daisyui")],
 }

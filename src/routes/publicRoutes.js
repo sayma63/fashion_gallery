@@ -3,6 +3,7 @@ import Contact from "../pages/Contact"
 import Login from "../pages/Login"
 import Products from "../pages/Products"
 import About from "../pages/About";
+import Signup from "../pages/Signup";
 
 
 
@@ -13,6 +14,7 @@ export const publicRoute=[
     {path:'/products', name:"Products", Component:Products},
     {path:'/contact', name:"Contact", Component:Contact},
     {path:'/login', name:"Login", Component:Login},
+    {path:'/signup', name:"Signup", Component:Signup},
    
   ];
    
