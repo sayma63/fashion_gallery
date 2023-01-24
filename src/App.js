@@ -5,6 +5,7 @@ import { publicRoute } from "./routes/publicRoutes";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(()=>{
@@ -35,6 +36,7 @@ function App() {
 
 
        </Routes>
+       <Footer></Footer>
 
      </Navbar>
     </div>
