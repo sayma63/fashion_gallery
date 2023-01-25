@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../contexts/AuthProvider';
 import toast from 'react-hot-toast';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Signup = () => {
     const { register,formState:{errors}, handleSubmit } = useForm();
-    const {createUser,updateUser}=useContext(AuthContext);
+    const {createUser,updateUser,providerLogin}=useContext(AuthContext);
+    const googleProvider = new GoogleAuthProvider();
+    const [googleError,setGoogleError]=useState("");
     const[signUpError,setSignUpError]=useState('')
     const handleSignup= data=>{
         console.log(data)
@@ -30,7 +33,20 @@ const Signup = () => {
             setSignUpError(error.message)
         })
     }
-    
+    const handleGoogleSignIn=()=>{
+        providerLogin(googleProvider)
+        .then(result=>{
+          const user =result.user;
+          console.log(user);
+        
+
+      })
+      .catch(error=>{
+          console.log(error.message)
+          setGoogleError(error.message)
+          
+      })
+    }
     return (
         <div >
         <div className=' h-[100vh] bg-accent mt-16 flex justify-center items-center' >
@@ -107,10 +123,15 @@ const Signup = () => {
                     </div>
                     <input className='btn btn-primary w-full mt-4' value="Signup" type="submit" />
                     {signUpError && <p className='text-red-600'>{signUpError}</p>}
+                    <div>
+                            {
+                                googleError && <p className='text-red-600'>{googleError}</p>
+                            }
+                        </div>
                 </form>
                 <p>Already have an account <Link to='/login' className='text-green-500'>Please Login</Link></p>
                  <div class="divider">OR</div>
-                <button className='btn btn-outline w-full hover:btn-primary'>Continue with Google</button>
+                <button onClick={handleGoogleSignIn} className='btn btn-outline w-full hover:btn-primary'>Continue with Google</button>
                     
                     
              </div>

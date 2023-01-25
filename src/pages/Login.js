@@ -3,14 +3,17 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom"
 import { AuthContext } from '../contexts/AuthProvider';
 import {useNavigate,Outlet,useLocation} from "react-router-dom"
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const { register,formState:{errors}, handleSubmit } = useForm();
-    const {signIn}=useContext(AuthContext);
+    const {signIn,providerLogin}=useContext(AuthContext);
+    const googleProvider = new GoogleAuthProvider()
     const location=useLocation();
     const navigate=useNavigate()
     const from =location.state?.from?.pathname || '/';
     const [loginError,setLoginError]=useState("")
+    const [googleError,setGoogleError]=useState("")
     const handleLogin= data=>{
         console.log(data);
         setLoginError('');
@@ -25,6 +28,21 @@ const Login = () => {
             console.log(error.message)
             setLoginError(error.message)
         })
+    }
+    const handleGoogleSignIn=()=>{
+          providerLogin(googleProvider)
+          .then(result=>{
+            const user =result.user;
+            console.log(user);
+          
+
+        })
+        .catch(error=>{
+            console.log(error.message)
+            setGoogleError(error.message)
+            
+        })
+
     }
     return (
       
@@ -115,10 +133,15 @@ const Login = () => {
                                 loginError && <p className='text-red-600'>{loginError}</p>
                             }
                         </div>
+                        <div>
+                            {
+                                googleError && <p className='text-red-600'>{googleError}</p>
+                            }
+                        </div>
                     </form>
                     <p>New to Fashion Gallery? <Link to='/signup' className='text-green-500'>Create new account</Link></p>
                      <div class="divider">OR</div>
-                    <button className='btn btn-outline w-full hover:btn-primary'>Continue with Google</button>
+                    <button onClick={handleGoogleSignIn} className='btn btn-outline w-full hover:btn-primary'>Continue with Google</button>
                         
                         
                  </div>
