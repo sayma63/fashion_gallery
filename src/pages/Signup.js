@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../contexts/AuthProvider';
 import toast from 'react-hot-toast';
-import { GoogleAuthProvider } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, sendEmailVerification } from 'firebase/auth';
+
 
 const Signup = () => {
     const { register,formState:{errors},reset, handleSubmit } = useForm();
-    const {createUser,updateUser,providerLogin}=useContext(AuthContext);
+    const {createUser,updateUser,providerLogin,verifyEmail}=useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider();
     const [googleError,setGoogleError]=useState("");
     const[signUpError,setSignUpError]=useState('');
+    
     
     const handleSignup= data=>{
         console.log(data)
@@ -22,6 +24,7 @@ const Signup = () => {
             console.log(user);
                  toast('User created successfully.')
                  reset();
+                 handleEmailVerification()
                  
                  
                  
@@ -55,6 +58,16 @@ const Signup = () => {
           
       })
     }
+    const handleEmailVerification = () => {
+        verifyEmail()
+            .then(() => {
+                alert('Please Check Your Email and Verify')
+
+            })
+            .catch(err => console.log(err))
+
+    }
+    
     return (
         <div >
         <div className=' h-[100vh] bg-accent mt-16 flex justify-center items-center' >
