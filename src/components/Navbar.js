@@ -1,10 +1,21 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../contexts/AuthProvider';
 
 
 const Navbar = ({ children }) => {
+    const {user,logOut}=useContext(AuthContext);
     const [dark,setDark]=useState(false);
     console.log(dark)
+
+    const handleLogOut =()=>{
+        logOut()
+        .then(()=>{
+
+        })
+        .catch(err=>console.log(err))
+
+    }
     
     return (
         <div class="drawer drawer-end" data-theme={dark? "dark":"light"}>
@@ -34,9 +45,11 @@ const Navbar = ({ children }) => {
                             <li>
                                 <NavLink to='/contact' className="rounded-lg">Contact</NavLink>
                             </li>
-                            <li>
+                            { user?.uid?<li>
+                                <button onClick={handleLogOut} className="rounded-lg">SignOut</button>
+                            </li>:<li>
                                 <NavLink to='/login' className="rounded-lg">Login</NavLink>
-                            </li>
+                            </li>}
                             <li class="dropdown dropdown-hover dropdown-end ">
 
                                 <label tabindex="0" class="btn btn-primary btn-outline rounded-lg ">Book Now</label>
