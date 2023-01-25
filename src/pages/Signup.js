@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../contexts/AuthProvider';
@@ -6,11 +6,12 @@ import toast from 'react-hot-toast';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Signup = () => {
-    const { register,formState:{errors}, handleSubmit } = useForm();
+    const { register,formState:{errors},reset, handleSubmit } = useForm();
     const {createUser,updateUser,providerLogin}=useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider();
     const [googleError,setGoogleError]=useState("");
-    const[signUpError,setSignUpError]=useState('')
+    const[signUpError,setSignUpError]=useState('');
+    
     const handleSignup= data=>{
         console.log(data)
         setSignUpError('')
@@ -20,6 +21,10 @@ const Signup = () => {
             const user =result.user;
             console.log(user);
                  toast('User created successfully.')
+                 reset();
+                 
+                 
+                 
             const userInfo ={
                 displayName:data.name
             }
@@ -32,7 +37,10 @@ const Signup = () => {
             console.log(error)
             setSignUpError(error.message)
         })
+       
     }
+   
+   
     const handleGoogleSignIn=()=>{
         providerLogin(googleProvider)
         .then(result=>{

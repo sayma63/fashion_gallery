@@ -6,7 +6,7 @@ import {useNavigate,Outlet,useLocation} from "react-router-dom"
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
-    const { register,formState:{errors}, handleSubmit } = useForm();
+    const { register,formState:{errors},reset, handleSubmit } = useForm();
     const {signIn,providerLogin}=useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider()
     const location=useLocation();
@@ -20,6 +20,7 @@ const Login = () => {
         signIn(data.email,data.password)
         .then(result=>{
             const user =result.user;
+            reset();
             console.log(user);
             navigate(from, {replace:true})
 
