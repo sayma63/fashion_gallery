@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
 import Products from "./pages/Products";
 import PrivateRoute from "./authentication/PrivateRoute";
+import Login from "./pages/Login";
+import Features from "./pages/Features";
 
 function App() {
   useEffect(()=>{
@@ -39,7 +41,9 @@ function App() {
 
 
        </Routes>
+       <Features></Features>
        <Toaster></Toaster>
+       
       
        <Footer></Footer>
       

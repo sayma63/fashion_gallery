@@ -7,7 +7,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const { register,formState:{errors},reset, handleSubmit } = useForm();
-    const {signIn,providerLogin}=useContext(AuthContext);
+    const {signIn,providerLogin,resetPassword }=useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider()
     const location=useLocation();
     const navigate=useNavigate()
@@ -15,13 +15,13 @@ const Login = () => {
     const [loginError,setLoginError]=useState("")
     const [googleError,setGoogleError]=useState("")
     const handleLogin= data=>{
-        console.log(data);
+        // console.log(data);
         setLoginError('');
         signIn(data.email,data.password)
         .then(result=>{
             const user =result.user;
             reset();
-            console.log(user);
+             console.log(user);
             navigate(from, {replace:true})
 
         })
@@ -45,6 +45,19 @@ const Login = () => {
         })
 
     }
+    // const handleResetPassword=({email})=>{
+    //     console.log("email is",email)
+    //     console.log("email; showed",email)
+    //    resetPassword(email)
+    //    .then(() => {
+       
+    //     alert('Password reset email sent');
+    //   })
+    //   .catch((error) => {
+        
+    //     console.log(error)
+    //   });
+    // }
     return (
       
         <div >
@@ -82,7 +95,7 @@ const Login = () => {
                             <label class="label">
                                 <span class="label-text">Email</span>
                             </label>
-                            <input type="text"
+                            <input type="email"
                              {...register("email",{
                                 required:{
                                     value:true,
@@ -119,16 +132,16 @@ const Login = () => {
                             
                             {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
  
-                            {errors.password?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                            {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
  
 
                            
-                            <label class="label">
-                                <span class="label-text">Forget Password?</span>
+                            {/* <label class="label">
+                            <p class="label-text">Forget Password? <button onClick={handleResetPassword} className='   link '>Please reset</button></p>
 
-                            </label>
+                            </label> */}
                         </div>
-                        <input className='btn btn-primary w-full' value="Login" type="submit" />
+                        <input className='btn btn-primary w-full mt-3' value="Login" type="submit" />
                         <div>
                             {
                                 loginError && <p className='text-red-600'>{loginError}</p>

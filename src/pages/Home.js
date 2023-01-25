@@ -1,9 +1,10 @@
 import React from 'react';
 import shoppingGirl from "../assets/images/woman.png"
+import Login from './Login';
 
 const Home = () => {
     return (
-        <div class="hero h-[60vh] lg:w-4/5  mx-auto bg-accent mt-16  ">
+        <div class="hero lg:h-[60vh]  lg:w-4/5  mx-auto bg-accent mt-16  ">
   <div class="hero-content flex-col lg:flex-row ">
   <div>
       <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="text-4xl font-bold  ">Best Collections for </h1>
@@ -17,7 +18,9 @@ const Home = () => {
     </div>
     
   </div>
+  
 </div>
+
     );
 };
 
