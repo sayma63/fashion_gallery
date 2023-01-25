@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   useEffect(()=>{
@@ -36,9 +37,12 @@ function App() {
 
 
        </Routes>
+       <Toaster></Toaster>
       
        <Footer></Footer>
+      
      </Navbar>
+    
      
     </div>
   );
