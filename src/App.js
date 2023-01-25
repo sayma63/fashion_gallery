@@ -2,11 +2,14 @@ import Navbar from "./components/Navbar";
 
 import { Route, Routes } from 'react-router-dom';
 import { publicRoute } from "./routes/publicRoutes";
+import { privateRoute } from "./routes/privateRoutes";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
+import Products from "./pages/Products";
+import PrivateRoute from "./authentication/PrivateRoute";
 
 function App() {
   useEffect(()=>{
@@ -20,15 +23,14 @@ function App() {
       {
         publicRoute.map(({path,Component},index)=><Route key={index} path={path} element={<Component/>}></Route>)
       }
-     {/* <Route path='/' element={<Home></Home>}></Route>
-     <Route path='login' element={<Login></Login>}></Route>
-     <Route path='contact' element={<Contact></Contact>}></Route>
-     <Route path='products' element={<Products></Products>}></Route>
-     <Route path ='about' element={<About></About>}></Route> */}
-
-      
+     
+<Route element={<PrivateRoute/>}>
+{
+        privateRoute.map(({path,Component},index)=><Route key={index} path={path} element={<Component/>}></Route>)
+      }
 
 
+</Route>
 
  
 
