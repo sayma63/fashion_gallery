@@ -44,20 +44,7 @@ const Landing = () => {
                         </div>
                         
                     </div>
-                    {/* <div className='bg-[green]   h-[500px] '
-                        style={{
-                            backgroundImage: `url(${yellow_kurti})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center'
-                       
-
-                        }} >
-
-                         <div className='bg-[red] '>
-                    <h1>div3</h1>
-                </div> 
-               
-                </div> */}
+                   
             </div>
        </div>
        </div>

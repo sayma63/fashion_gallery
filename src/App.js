@@ -13,6 +13,7 @@ import PrivateRoute from "./authentication/PrivateRoute";
 import Login from "./pages/Login";
 import Features from "./pages/Features";
 import Landing from "./pages/Landing";
+import SaleBanner from "./pages/SaleBanner";
 
 function App() {
   useEffect(()=>{
@@ -43,6 +44,7 @@ function App() {
 
        </Routes>
        <Landing></Landing>
+       <SaleBanner></SaleBanner>
        <Features></Features>
        <Toaster></Toaster>
        
