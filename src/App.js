@@ -12,6 +12,7 @@ import Products from "./pages/Products";
 import PrivateRoute from "./authentication/PrivateRoute";
 import Login from "./pages/Login";
 import Features from "./pages/Features";
+import Landing from "./pages/Landing";
 
 function App() {
   useEffect(()=>{
@@ -41,6 +42,7 @@ function App() {
 
 
        </Routes>
+       <Landing></Landing>
        <Features></Features>
        <Toaster></Toaster>
        
