@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Features from "./pages/Features";
 import Landing from "./pages/Landing";
 import SaleBanner from "./pages/SaleBanner";
+import BlogsCards from "./pages/BlogsCards";
 
 function App() {
   useEffect(()=>{
@@ -45,6 +46,7 @@ function App() {
        </Routes>
        <Landing></Landing>
        <SaleBanner></SaleBanner>
+       <BlogsCards></BlogsCards>
        <Features></Features>
        <Toaster></Toaster>
        
