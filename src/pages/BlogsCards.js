@@ -1,7 +1,7 @@
 import React from 'react';
-import shoes from "../assets/images/shoes.jpg"
-import bags from "../assets/images/bags.jpg"
-import tops from "../assets/images/tops.jpg"
+import shoes from "../assets/images/all photo/shoes.png"
+import bags from "../assets/images/all photo/bags.jpg"
+import tops from "../assets/images/all photo/tops.png"
 import BlogCard from './BlogCard';
 
 const BlogsCards = () => {
@@ -33,7 +33,7 @@ const BlogsCards = () => {
         //        {/* <div>
         //        <h1 className='text-4xl text-center uppercase'><i>New Blogs!!</i></h1>
         //        </div> */}
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:mx-auto mt-5'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  mt-5'>
             {
                cardData.map(card=><BlogCard
                key={card.id}

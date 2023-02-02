@@ -1,0 +1,45 @@
+[
+    {
+      "id": "01",
+      "name": "Women Clothes",
+      "img" :"https://i.ibb.co/4VR8RyH/Bengali-woman-wearing-sari.png"
+    },
+    {
+      "id": "02",
+      "name": "Ladies Bag",
+      "img" :"https://i.ibb.co/pvvV0sm/bags.jpg"
+    },
+    {
+      "id": "03",
+      "name": "Shoes",
+      "img" :"https://i.ibb.co/R2tY7Nn/shoes.png"
+    },
+    {
+      "id": "04",
+      "name": "Kurti",
+      "img" :"https://i.ibb.co/ZGfHNfG/kurti-dress-1.jpg"
+    },
+    {
+      "id": "05",
+      "name": "MakeUp",
+      "img" :"https://i.ibb.co/ZTMFrDZ/makeup.jpg"
+    },
+    {
+      "id": "06",
+      "name": "Sarees",
+      "img" :"https://i.ibb.co/7b1hHbN/womensari.png"
+    },
+    {
+      "id": "07",
+      "name": "Hijab",
+      "img" :"https://i.ibb.co/kD4VNJp/chifon-hijab.jpg"
+    },
+    {
+      "id": "08",
+      "name": "Bangles",
+      "img" :"https://i.ibb.co/bXqw74Y/bangles.jpg"
+    }
+  ]
+
+
+

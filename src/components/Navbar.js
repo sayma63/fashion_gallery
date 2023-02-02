@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthProvider';
+import Catagories from '../pages/ShowsProducts/Catagories';
 
 
 const Navbar = ({ children }) => {
@@ -31,7 +32,7 @@ const Navbar = ({ children }) => {
                     </div>
 
                     <div class="flex-none hidden lg:block">
-                        <ul class="menu menu-horizontal gap-x-2">
+                        <ul class="menu menu-horizontal gap-x-2 ">
 
                             <li>
                                 <NavLink to='/' className="rounded-lg">Home</NavLink>
@@ -42,6 +43,9 @@ const Navbar = ({ children }) => {
                             <li>
                                 <NavLink to='/products' className="rounded-lg">Products</NavLink>
                             </li>
+                            {/* <li>
+                        <NavLink to='/showsProduct' className="rounded-lg">ShowsProduct</NavLink>
+                    </li> */}
                             <li>
                                 <NavLink to='/contact' className="rounded-lg">Contact</NavLink>
                             </li>
@@ -54,8 +58,12 @@ const Navbar = ({ children }) => {
 
                                 <label tabindex="0" class="btn btn-primary btn-outline rounded-lg ">Book Now</label>
                                 <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                                    <li><a>Item 1</a></li>
-                                    <li><a>Item 2</a></li>
+                                <li>
+                                <NavLink to='/contact' className="rounded-lg">Item1</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to='/login' className="rounded-lg">Item2</NavLink>
+                            </li>
                                 </ul>
 
                             </li>
@@ -82,7 +90,7 @@ const Navbar = ({ children }) => {
             </div>
             <div class="drawer-side">
                 <label for="my-drawer-3" class="drawer-overlay"></label>
-                <ul class="menu p-4 w-80 bg-base-100 ">
+                <ul class="menu p-4 w-80 bg-base-100 gap-y-2 ">
 
                     <li>
                         <NavLink to='/' className="rounded-lg">Home</NavLink>
@@ -100,22 +108,46 @@ const Navbar = ({ children }) => {
                         <NavLink to='/login' className="rounded-lg">Login</NavLink>
                     </li>
                     
-                        <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-                            <div class="collapse-title text-xl font-medium">
-                                BOOK NOW
-                            </div>
-                            <div class="collapse-content">
-                            <li>
-                        <NavLink to='/contact' className="rounded-lg">Item1</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to='/login' className="rounded-lg">Item2</NavLink>
-                    </li>
-                            </div>
+
+                    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            BOOK NOW
                         </div>
+                        <div class="collapse-content">
+                            <li>
+                                <NavLink to='/contact' className="rounded-lg">Item1</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to='/login' className="rounded-lg">Item2</NavLink>
+                            </li>
+
+
+                        </div>
+
+                    </div>
                     
+                    
+                    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mt-2">
+                        <div class="collapse-title text-xl font-medium">
+                            Categories
+                        </div>
+                        <div class="collapse-content">
+                            <Catagories></Catagories>
+                            {/* <li>
+                                <NavLink to='/contact' className="rounded-lg">Item1</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to='/login' className="rounded-lg">Item2</NavLink>
+                            </li> */}
+
+
+                        </div>
+
+                    </div>
+
 
                 </ul>
+                
 
             </div>
         </div>

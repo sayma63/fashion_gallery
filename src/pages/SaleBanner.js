@@ -1,7 +1,7 @@
 import React from 'react';
-import women_sari from '../assets/images/women-with-shopping-bag.png'
-import stylishGirl from '../assets/images//stylish-woman.png'
-import twoGirl from '../assets/images/two-young-girl.png'
+
+
+import twoGirl from '../assets/images/all photo/two-young-girl.png'
 const SaleBanner = () => {
     return (
         <div className=' lg:mx-auto lg:w-[90%] mt-10'>

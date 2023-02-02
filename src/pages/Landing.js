@@ -1,14 +1,14 @@
 import React from 'react';
-import sari from '../assets/images/woman-wearing-sari.png'
-import women_sari from '../assets/images/Bengali-woman-wearing-sari.jpg'
-import yellow_kurti from '../assets/images/yellow-dress.png'
-import makeup from "../assets/images/makeupset.png"
+import sari from '../assets/images/all photo/womensari.png'
+
+import yellow_kurti from '../assets/images/all photo/yellow-dress.png'
+import makeup from "../assets/images/all photo/makeupset.png"
 
 const Landing = () => {
     return (
         <div className='lg:p-2 mt-5 '>
             <div className=''>
-                <div className=' grid lg:grid-cols-2 lg:gap-x-5 gap-y-5  mx-auto lg:w-[70%]  '>
+                <div className=' grid lg:grid-cols-2 lg:gap-x-5 gap-y-5  mx-auto lg:w-[75%]  '>
                     <div className=' h-[420px]  bg-[red]  '
                         style={{
                             backgroundImage: `url(${sari})`,
