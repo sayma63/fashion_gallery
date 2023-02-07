@@ -1,481 +1,482 @@
 [
+
     {
-        "id": "26",
-        "name": "Criss Cross Flat Shoes ",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
-        "price": 350,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "Comfortable and soft,Reduces stress on joints,strengthens and tones,improves posture.Suitable for outdoor walking,Entertainment,leisure,party,work and other"
-       
-    },
-    {
-        "id": "27",
         
-        "name": "Shoes for women",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
-        "price": 325,
-        "ratings":4,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "So attractive and comfortable for Women,imported directly from China."
-        
-    },
-    {
-        "id": "28",
-        
-        "name": "China Pink Shoes",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
-        "price": 1650,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "Suitable for Walking, Running, Playing and Jogging.Fashionable, Comfortable & Durable."
-        
-    },
-    {
-        "id": "29",
-        
-        "name": "Sporty Sneaker",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
-        "price": 2249,
-        "ratings":5,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
-        
-    },
-    {
-        "id": "30",
-        
-        "name": "North Star Sneaker",
-        "img": "https://i.ibb.co/wh7t3N3/555.jpg",
-        "price": 2000,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
-       
-    },
-    {
-        "id": "31",
-        
-        "name": "Red Slipper",
-        "img": "https://i.ibb.co/KzCG8qr/8888.jpg",
-        "price": 200,
-        "ratings":3,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "A shoe is an item of footwear intended to protect and comfort the human foot while the wearer is doing various activities. Shoes are also used as an item of decoration and fashion."
-        
-    },
-    {
-        "id": "32",
-        
-        "name": "Exclusive Shoes",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
-        "price": 350,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "So attractive and comfortable for Women,imported directly from China."
-       
-    },
-    {
-        "id": "33",
-        
-        "name": "Slippers",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
-        "price": 400,
-        "ratings":4,
-        "quantity":0,
-        "category":"Shoes",
-        "description": " The design of shoes has varied enormously through time and from culture to culture, with appearance originally being tied to function. Additionally, fashion has often dictated many design elements"
-        
-    },
-    {
-        "id": "34",
-        
-        "name": "Weightless Shoe",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
-        "price": 1650,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "Comfortable and soft,Reduces stress on joints,strengthens and tones,improves posture.Suitable for outdoor walking,Entertainment,leisure,party,work and other"
-        
-    },
-    {
-        "id": "35",
-        
-        "name": "Breathble Shoes",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
-        "price": 2249,
-        "ratings":5,
-        "quantity":0,
-        "category":"Shoes",
-        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
-        
-    },
-    {
-        "id": "36",
-        
-        "name": "Beautiful HandBag ",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
-        "price": 350,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Ladies Bag",
-        "description": "Comfortable and soft for use daily purposes.Suitable for carry anytime anywhere."
-       
-    },
-    {
-        "id": "37",
-        
-        "name": "Crop Kurti",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
-        "price": 325,
-        "ratings":4,
-        "quantity":0,
-        "category":"Kurti",
-        "description": "Soft georgette fabric is used for comfortable use. To give a stylish look at neck & sleeve pleated design is given . "
-        
-    },
-    {
-        "_id": "38",
-        
-        "name": "Neck Tops",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
-        "price": 650,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Kurti",
-        "description": "Suitable  for Summer Season.Fashionable, Comfortable & Durable."
-        
-    },
-    {
-        "id": "39",
-        
-        "name": "Short Kurti",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
-        "price": 2249,
-        "ratings":5,
-        "quantity":0,
-        "category":"Kurti",
-        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
-        
-    },
-    {
-        "id": "40",
-        
-        "name": "Classic Kurti",
-        "img": "https://i.ibb.co/wh7t3N3/555.jpg",
-        "price": 2000,
-        "ratings":4.5,
-        "quantity":0,
-        "category":"Kurti",
-        "description": "This Kurti is made from soft georgette fabric for comfortable use with smocking sleeve design to give it an unique look. "
-       
-    },
-    {
-        "id": "01",
         
         "name": "Jeans",
-        "img": "https://i.ibb.co/KzCG8qr/8888.jpg",
+        "img": "https://i.ibb.co/87RfpRb/Jeans.jpg",
         "price": 1200,
         "ratings":4,
-        "quantity":0,
+        
         "category":"Women Clothes",
         "description": "Made with stretchable denim fabrics which helps to move very easily wearing this Jeans. "
         
     },
     {
-        "id": "02",
-        
         "name": "Stylish Pants",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/WByhbg9/Stylish-Pants.jpg",
         "price": 1050,
         "ratings":4.5,
-        "quantity":0,
+       
         "category":"Women Clothes",
         "description": "Stretchable fabric is used for comfortable & easy movements. Belt loop & Hidden drawstrings is added to adjust waist size perfectly."
        
     },
     {
-        "id": "03",
+        
         
         "name": "Classic Tops",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+        "img": "https://i.ibb.co/cv706t6/Classic-Tops.jpg",
         "price": 700,
         "ratings":3.5,
-        "quantity":0,
+        
         "category":"Women Clothes",
         "description": " The design of tops has varied enormously through time and from culture to culture, with appearance originally being tied to function. Additionally, fashion has often dictated many design elements"
         
     },
     {
-        "id": "04",
+        
         
         "name": "Fashionale Kameez",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+        "img": "https://i.ibb.co/xsvSyNw/Fashionale-Kameez.jpg",
         "price": 1650,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Women Clothes",
         "description": "This kameez is beautifully designed with multicolored embroidery work with minimal karchupi work for an elegant wear. "
         
     },
     {
-        "id": "05",
+        
         
         "name": "Digital Printed Kameez",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
+        "img": "https://i.ibb.co/Pw0K7R7/Digital-Printed-Kameez.jpg",
         "price": 1249,
         "ratings":5,
-        "quantity":0,
+        
         "category":"Women Clothes",
         "description": "This kameez is beautifully designed with multicolored embroidery work with minimal karchupi work for an elegant wear. "
         
     },
     {
-        "id": "06",
+        
         
         "name": "China Bag",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/dm167hf/China-Bag.jpg",
         "price": 950,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Ladies Bag",
         "description": "Cross Body Shoulder Bag For Girls,imported from China,best quality,look style."
        
     },
     {
-        "id": "07",
+        
        
         "name": "Stylish Bag",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/2K6DXW4/Stylish-Hand-Bag.jpg",
         "price": 1050,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Ladies Bag",
         "description": "Cross Body Shoulder Bag For Girls,imported from China,best quality,look style."
        
     },
     {
-        "id": "08",
+        
         
         "name": "Leather Bag",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+        "img": "https://i.ibb.co/Lv5QVBt/Leather-Bag.jpg",
         "price": 700,
         "ratings":3.5,
-        "quantity":0,
+       
         "category":"Ladies Bag",
         "description": " Suitable for wearing to many occasions make you full of personality.Easy to carry large capacitySimple and generous."
         
     },
     {
-        "id": "09",
+        
         
         "name": "Candy Hand Bag",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+        "img": "https://i.ibb.co/JRYvgKd/Candy-Hand-Bag.jpg",
         "price": 1650,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Ladies Bag",
         "description": "This Bags designed with multicolored  for an elegant carrying. "
         
     },
     {
-        "id": "10",
+        
         
         "name": "Monipuri Bag",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
+        "img": "https://i.ibb.co/zbTp9c9/Monipuri-Bag.jpg",
         "price": 1249,
         "ratings":5,
-        "quantity":0,
+        
         "category":"Ladies Bag",
         "description": "This Bags designed with multicolored  for an elegant carrying. "
         
     },
     {
-        "id": "11",
+        
         
         "name": "Silk Saree",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/xC56kFH/Silk-Saree.jpg",
         "price": 950,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Sarees",
         "description": "Perfect wear for formal occasions,best quality,look style."
        
     },
     {
-        "id": "12",
+        
         
         "name": "Dupiyan Saree",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/F3R5NKQ/Dupiyan-Saree.jpg",
         "price": 750,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Sarees",
         "description": "Casual, Party & Festive.Very comfortable to use in any weather ."
        
     },
     {
-        "id": "13",
+        
         
         "name": "Chumki Saree",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+        "img": "https://i.ibb.co/SV7djys/Chumki-Saree.jpg",
         "price": 400,
         "ratings":3.5,
-        "quantity":0,
+        
         "category":"Sarees",
         "description": " Suitable for wearing to many occasions make you full of personality. Casual, Party & Festive.An uncommon present for the extraordinary individual."
         
     },
     {
-        "id": "14",
+        
         
         "name": "Katan Saree",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+        "img": "https://i.ibb.co/k3Jr8Yy/Katan-Saree.jpg",
         "price": 1050,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Sarees",
         "description": "Casual, Party & Festive.Very comfortable to use in any weather . "
         
     },
     {
-        "id": "15",
+        
         
         "name": "Nokshi Saree",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
+        "img": "https://i.ibb.co/98s3ssD/Nokshi-Saree.png",
         "price": 480,
         "ratings":5,
-        "quantity":0,
+       
         "category":"Sarees",
         "description": "Casual, Party & Festive.Very comfortable to use in any weather .  "
         
     },
     {
-        "id": "16",
+        
         
         "name": "Metal Churi",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/VTVrqrP/Metal-Churi.jpg",
         "price": 450,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Bangles",
         "description": "Easyly fitted any person and Suiteble for all occasion.Fashionable and stylish."
        
     },
     {
-        "id": "17",
+        
         
         "name": "Resmi Churi",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/g7GrYwq/Resmi-Churi.jpg",
         "price": 150,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Bangles",
         "description": "Perfect gift for dearest Person.Best Quality Product and Same as Photo and Standard and Smart Design."
        
     },
     {
-        "id": "18",
+        
         
         "name": "Gold Bala",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+        "img": "https://i.ibb.co/qgDMTP1/Gold-Bala.jpg",
         "price": 200,
         "ratings":3.5,
-        "quantity":0,
+       
         "category":"Bangles",
         "description": " Golden work.Fashionable and stylish.Free Size and comfortable."
         
     },
     {
-        "id": "19",
+        
         
         "name": "Bracelet",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+        "img": "https://i.ibb.co/bgjTJ4N/Bracelet.jpg",
         "price": 500,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Bangles",
         "description": "Exclusive fashion gold metal bangles bracelet for women.Best gift for loveable person.  "
         
     },
     {
-        "id": "20",
+        
         
         "name": "Wooden Bangle",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
+        "img": "https://i.ibb.co/RSkkQQD/Wooden-Bangle.jpg",
         "price": 300,
         "ratings":5,
-        "quantity":0,
+        
         "category":"Bangles",
         "description": "Solid wood bangles and cuffs.Customizable sets.Ethnic and bohemian.  "
         
     },
     {
-        "id": "21",
+        
         
         "name": "GR Lipstick",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/gW5kGB7/GR-Lipstick.jpg",
         "price": 450,
         "ratings":4.5,
-        "quantity":0,
+       
         "category":"Makeup",
         "description": "Perfect gift for dearest Person.Best Quality Product and Same as Photo and waterproof."
        
     },
     {
-        "id": "22",
+        
         
         "name": "Kajol",
-        "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+        "img": "https://i.ibb.co/qkt7KjD/Kajol.jpg",
         "price": 150,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Makeup",
         "description": "Perfect gift for dearest Person.Best Quality Product and Same as Photo and waterproof."
        
     },
     {
-        "id": "23",
+        
         
         "name": "Eye Shadow Pallete",
-        "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+        "img": "https://i.ibb.co/M5sjNTv/Eye-Shadow-Pallete.jpg",
         "price": 280,
         "ratings":3.5,
-        "quantity":0,
+        
         "category":"Makeup",
         "description": " High Quality Product.Makes you feel refreshed and Long Lasting and Easy to make up."
         
     },
     {
-        "id": "24",
+        
         
         "name": "Miss Rose Makeup Box",
-        "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+        "img": "https://i.ibb.co/XsMpB81/Makeup-Box.jpg",
         "price": 2000,
         "ratings":4.5,
-        "quantity":0,
+        
         "category":"Makeup",
         "description": "High Quality Product.Makes you feel refreshed and Long Lasting and Easy to make up "
         
     },
     {
-        "id": "25",
+        
         
         "name": "Chanlanya Hightlighter",
-        "img": "https://i.ibb.co/5MvmD2g/88.jpg",
+        "img": "https://i.ibb.co/s3NGtZV/Highliter.jpg",
         "price": 190,
         "ratings":5,
-        "quantity":0,
+        
         "category":"Makeup",
         "description": "It has 4 shade available.Best quality and easy for use.  "
         
+    },
+   
+    {
+        
+        "name": "Criss Cross Flat Shoes ",
+        "img": "https://i.ibb.co/tmpSTFv/Criss-Cross-Flat-Shoes.jpg",
+        "price": 350,
+        "ratings":4.5,
+        
+        "category":"Shoes",
+        "description": "Comfortable and soft,Reduces stress on joints,strengthens and tones,improves posture.Suitable for outdoor walking,Entertainment,leisure,party,work and other"
+       
+    },
+    {
+        
+        
+        "name": "Shoes for women",
+        "img": "https://i.ibb.co/ZMrj3C9/Shoes-for-women.jpg",
+        "price": 325,
+        "ratings":4,
+        
+        "category":"Shoes",
+        "description": "So attractive and comfortable for Women,imported directly from China."
+        
+    },
+    {
+        
+        
+        "name": "China Pink Shoes",
+        "img": "https://i.ibb.co/n0bC8s7/China-Pink-Shoes.jpg",
+        "price": 1650,
+        "ratings":4.5,
+        
+        "category":"Shoes",
+        "description": "Suitable for Walking, Running, Playing and Jogging.Fashionable, Comfortable & Durable."
+        
+    },
+    {
+        
+        
+        "name": "Sporty Sneaker",
+        "img": "https://i.ibb.co/WF5Gd6k/Sporty-Sneaker.jpg",
+        "price": 2249,
+        "ratings":5,
+        
+        "category":"Shoes",
+        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
+        
+    },
+    {
+        
+        
+        "name": "North Star Sneaker",
+        "img": "https://i.ibb.co/1M6k2Wx/North-Star-Sneaker.jpg",
+        "price": 2000,
+        "ratings":4.5,
+        
+        "category":"Shoes",
+        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
+       
+    },
+    {
+        
+        
+        "name": "Red Slipper",
+        "img": "https://i.ibb.co/Z6rbr4h/Red-Slipper.jpg",
+        "price": 200,
+        "ratings":3,
+        
+        "category":"Shoes",
+        "description": "A shoe is an item of footwear intended to protect and comfort the human foot while the wearer is doing various activities. Shoes are also used as an item of decoration and fashion."
+        
+    },
+    {
+        
+        
+        "name": "Exclusive Shoes",
+        "img": "https://i.ibb.co/1b7V1J6/Exclusive-Shoes.jpg",
+        "price": 350,
+        "ratings":4.5,
+        
+        "category":"Shoes",
+        "description": "So attractive and comfortable for Women,imported directly from China."
+       
+    },
+    {
+        
+        
+        "name": "Slippers",
+        "img": "https://i.ibb.co/jMWQTd1/Slippers.jpg",
+        "price": 400,
+        "ratings":4,
+        
+        "category":"Shoes",
+        "description": " The design of shoes has varied enormously through time and from culture to culture, with appearance originally being tied to function. Additionally, fashion has often dictated many design elements"
+        
+    },
+    {
+        
+        
+        "name": "Weightless Shoe",
+        "img": "https://i.ibb.co/tYG5qc7/Weightless-Shoes.jpg",
+        "price": 1650,
+        "ratings":4.5,
+        
+        "category":"Shoes",
+        "description": "Comfortable and soft,Reduces stress on joints,strengthens and tones,improves posture.Suitable for outdoor walking,Entertainment,leisure,party,work and other"
+        
+    },
+    {
+        
+        
+        "name": "Breathble Shoes",
+        "img": "https://i.ibb.co/vwX5PgX/Breathble-Shoes.jpg",
+        "price": 2249,
+        "ratings":5,
+        
+        "category":"Shoes",
+        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
+        
+    },
+    {
+        
+        
+        "name": "Beautiful HandBag ",
+        "img": "https://i.ibb.co/mX84SbC/Beautiful-Hand-Bag.jpg",
+        "price": 350,
+        "ratings":4.5,
+        
+        "category":"Ladies Bag",
+        "description": "Comfortable and soft for use daily purposes.Suitable for carry anytime anywhere."
+       
+    },
+    {
+        
+        
+        "name": "Crop Kurti",
+        "img": "https://i.ibb.co/MNL47hm/Crop-Kurti.jpg",
+        "price": 325,
+        "ratings":4,
+        
+        "category":"Kurti",
+        "description": "Soft georgette fabric is used for comfortable use. To give a stylish look at neck & sleeve pleated design is given . "
+        
+    },
+    {
+        
+        
+        "name": "Neck Tops",
+        "img": "https://i.ibb.co/jhBNPw1/Neck-Tops.jpg",
+        "price": 650,
+        "ratings":4.5,
+        
+        "category":"Kurti",
+        "description": "Suitable  for Summer Season.Fashionable, Comfortable & Durable."
+        
+    },
+    {
+        
+        
+        "name": "Short Kurti",
+        "img": "https://i.ibb.co/cv706t6/Classic-Tops.jpg",
+        "price": 2249,
+        "ratings":5,
+        
+        "category":"Kurti",
+        "description": "These cool & practical Power trainers for the ladies are the perfect & colorful combination of style & comfort."
+        
+    },
+    {
+        
+        
+        "name": "Classic Kurti",
+        "img": "https://i.ibb.co/0ZgD5NB/Classic-Kurti.jpg",
+        "price": 2000,
+        "ratings":4.5,
+        
+        "category":"Kurti",
+        "description": "This Kurti is made from soft georgette fabric for comfortable use with smocking sleeve design to give it an unique look. "
+       
     }
+     
 ]

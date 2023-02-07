@@ -25,6 +25,9 @@ const Header = () => {
       <NavLink to='/products' className="rounded-lg">Products</NavLink>
     </li>
     <li>
+      <NavLink to='/dashboard' className="rounded-lg">Dashboard</NavLink>
+    </li>
+    <li>
       <NavLink to='/contact' className="rounded-lg">Contact</NavLink>
     </li>
     {user?.uid ? <li>

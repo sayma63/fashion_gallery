@@ -3,8 +3,12 @@ import Main from "../Layout/Main";
 import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
-import Group from "../pages/ShowsProducts/Group";
+
+
 import Products from "../pages/Products/Products/Products";
+import ProductDetails from "../pages/Products/Products/ProductDetails/ProductDetails";
+import PrivateRoute from "../AllRoutes/PrivateRoute/PrivateRoute";
+import Dashboard from "../pages/Dashboard/Dashboard";
 
 
 export const routes=createBrowserRouter([
@@ -30,12 +34,18 @@ export const routes=createBrowserRouter([
             path:'/products',
             element:<Products></Products>
         },
-        // {
-        //     path:'/group/:id',
-        //     element:<Group></Group>
-        // }
+        {
+            path:'/product/:id',
+            element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
+            loader:({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+        }
 
     ]
+},
+{
+    path:'/dashboard',
+     element:<Dashboard></Dashboard>
+ 
 }
 
 

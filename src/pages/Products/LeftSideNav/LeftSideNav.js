@@ -11,15 +11,17 @@ const LeftSideNav = () => {
             .then(data => setGroups(data))
     }, [])
     return (
-        <div className=''>
-            <h1>Categories:{groups.length}</h1>
+       <div className='sticky top-0'>
+         <div   >
+            <div >
+            <h1 >Categories:{groups.length}</h1>
             <div>
                 
             </div>
-            <div>
+            <div  >
                 {
-                    groups.map(group => <div key={group.id}>
-                        <Link className='lg:flex items-center gap-2 mb-2' to='/products'>
+                    groups.map(group => <div  key={group.id} >
+                        <Link className='flex items-center gap-2 mb-2   ' to='/products'>
 
                             <div class="avatar">
                                 <div class="w-16 rounded">
@@ -36,6 +38,33 @@ const LeftSideNav = () => {
                 }
             </div>
         </div>
+        </div>
+       </div>
+        // <div >
+        //     <h1>Categories:{groups.length}</h1>
+        //     <div>
+                
+        //     </div>
+        //     <div >
+        //         {
+        //             groups.map(group => <div key={group.id} >
+        //                 <Link className='flex items-center gap-2   ' to='/products'>
+
+        //                     <div class="avatar">
+        //                         <div class="w-16 rounded">
+        //                             <img src={group.img} alt="Tailwind-CSS-Avatar-component" />
+        //                         </div>
+        //                     </div>
+        //                     <p>{group.name}</p>
+        //                 </Link>
+
+
+
+        //             </div>
+        //             )
+        //         }
+        //     </div>
+        // </div>
 
     )
 };

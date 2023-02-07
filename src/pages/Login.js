@@ -2,12 +2,12 @@ import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom"
 import { AuthContext } from '../contexts/AuthProvider';
-import {useNavigate,Outlet,useLocation} from "react-router-dom"
+import {useNavigate,useLocation} from "react-router-dom"
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const { register,formState:{errors},reset, handleSubmit } = useForm();
-    const {signIn,providerLogin,resetPassword }=useContext(AuthContext);
+    const {signIn,providerLogin }=useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider()
     const location=useLocation();
     const navigate=useNavigate()
