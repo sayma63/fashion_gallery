@@ -1,9 +1,18 @@
 import React, { useContext } from 'react';
+import {useQuery} from 'react-query'
 import { AuthContext } from '../../../contexts/AuthProvider';
 
 const MyOrders = () => {
     const {user}=useContext(AuthContext);
-    const url=`http://localhost:5000/orders?email=${user?.email}`
+    const url=`http://localhost:5000/orders?email=${user?.email}`;
+    const {data:orders=[]}=useQuery({
+        queryKey:['orders',user?.email],
+        queryFn: async ()=>{
+            const res= await fetch(url);
+            const data= await res.json();
+            return data;
+        }
+    });
     return (
         <div>
             <h1 className='text-3xl text-primary font-bold mb-4'>My Orders</h1>
@@ -14,32 +23,28 @@ const MyOrders = () => {
       <tr>
         <th></th>
         <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Email</th>
+        <th>Product Name</th>
+        <th>Category</th>
+        
       </tr>
     </thead>
     <tbody>
       
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-      </tr>
+    {
+            orders?.map((order,index)=><tr key={order._id}>
+                <th>{index+1}</th>
+                <td>{order.customer}</td>
+                <td>{order.email}</td>
+                <td>{order.productName}</td>
+                <td>{order.category}</td>
+                
+              </tr>
+              
+              )
+        }
       
-      <tr class="hover">
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
-      </tr>
       
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
     </tbody>
   </table>
 </div>
