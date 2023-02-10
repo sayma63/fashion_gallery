@@ -53,7 +53,7 @@ const Header = () => {
   
   return (
 
-    <div class=" lg:w-full navbar bg-base-100 fixed top-0 z-50 lg:px-20 lg:mx-auto " data-theme={dark ? "dark" : "light"}>
+    <div class="  navbar bg-base-100 fixed top-0 z-50 flex justify-between lg:px-20  " data-theme={dark ? "dark" : "light"}>
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -66,7 +66,7 @@ const Header = () => {
         </div>
         <div>
  
-        <Link to='/' className="flex-1 px-2 mx-2 lg:text-3xl text-xl font-serif">Fashion Gallery</Link>
+        <Link to='/' className="lg:flex-1 lg:px-2  lg:mx-2 lg:text-3xl text-xl font-serif">Fashion Gallery</Link>
         </div>
         {/* <div class="flex-1 px-2 mx-2 text-3xl font-serif ">Fashion Gallery</div> */}
       </div>
@@ -87,8 +87,15 @@ const Header = () => {
 
           </label>
         </ul>
-      </div>
+        
 
+      </div>
+      
+      <label for="dashboard-drawer" tabindex="1" class="btn btn-ghost  lg:hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      
+     
     </div>
 
   );

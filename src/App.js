@@ -15,7 +15,7 @@ function App() {
   },[])
   
   return (
-    <div className="">
+    <div className="max-w-[1440px]">
       <RouterProvider router={routes}></RouterProvider>
     
       <Toaster></Toaster>

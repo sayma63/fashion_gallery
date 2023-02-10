@@ -9,6 +9,8 @@ import Products from "../pages/Products/Products/Products";
 import ProductDetails from "../pages/Products/Products/ProductDetails/ProductDetails";
 import PrivateRoute from "../AllRoutes/PrivateRoute/PrivateRoute";
 import Dashboard from "../pages/Dashboard/Dashboard";
+import DashboardLayout from "../Layout/DashboardLayout";
+import MyOrders from "../pages/Dashboard/MyOrders/MyOrders";
 
 
 export const routes=createBrowserRouter([
@@ -44,7 +46,14 @@ export const routes=createBrowserRouter([
 },
 {
     path:'/dashboard',
-     element:<Dashboard></Dashboard>
+    element:<PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+    children:[
+
+        {
+            path:'/dashboard',
+            element:<MyOrders></MyOrders>
+        }
+    ]
  
 }
 
