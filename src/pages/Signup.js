@@ -1,6 +1,8 @@
 import React, { useContext,  useState } from 'react';
 import { Link,  useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import useToken from "../allhooks/useToken"
+
 
 import toast from 'react-hot-toast';
 import {  GoogleAuthProvider } from 'firebase/auth';
@@ -13,11 +15,16 @@ const Signup = () => {
     const googleProvider = new GoogleAuthProvider();
     const [googleError,setGoogleError]=useState("");
     const[signUpError,setSignUpError]=useState('');
+    const [createdUserEmail,setCreatedUserEmail]=useState('')
+    const [token]=useToken(createdUserEmail);
     const navigate=useNavigate();
+    if(token){
+        navigate('/');
+    }
     
     
-    const handleSignup= data=>{
-        console.log(data)
+    const handleSignup= (data)=>{
+        
         setSignUpError('')
         createUser(data.email,data.password)
 
@@ -69,16 +76,18 @@ const Signup = () => {
             headers:{
                 'content-type':'application/json'
             },
-            body:JSON.stringify(user)
+            body: JSON.stringify(user)
 
         })
         .then(res=>res.json())
         .then (data=>{
-            console.log("Save User",data);
-            navigate('/');
+            console.log(data)
+           setCreatedUserEmail(email);
+            
             
         })
     }
+   
     const handleEmailVerification = () => {
         verifyEmail()
             .then(() => {

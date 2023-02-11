@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { AuthContext } from '../contexts/AuthProvider';
 import {useNavigate,useLocation} from "react-router-dom"
 import { GoogleAuthProvider } from 'firebase/auth';
+import useToken from '../allhooks/useToken';
 
 const Login = () => {
     const { register,formState:{errors},reset, handleSubmit } = useForm();
@@ -13,7 +14,12 @@ const Login = () => {
     const navigate=useNavigate()
     const from =location.state?.from?.pathname || '/';
     const [loginError,setLoginError]=useState("")
-    const [googleError,setGoogleError]=useState("")
+    const [googleError,setGoogleError]=useState("");
+    const [loginUserEmail,setLoginUserEmail]=useState('');
+    const [token]=useToken(loginUserEmail);
+    if(token){
+        navigate(from, {replace:true})
+    }
     const handleLogin= data=>{
         // console.log(data);
         setLoginError('');
@@ -22,7 +28,8 @@ const Login = () => {
             const user =result.user;
             reset();
              console.log(user);
-            navigate(from, {replace:true})
+             setLoginUserEmail(data.email)
+          
 
         })
         .catch(error=>{
