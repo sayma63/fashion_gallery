@@ -14,6 +14,7 @@ import MyOrders from "../pages/Dashboard/MyOrders/MyOrders";
 import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
 import AdminRoute from "./AdminRoute/AdminRoute";
 import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
+import ManageProducts from "../pages/Dashboard/ManageProducts/ManageProducts";
 
 
 export const routes=createBrowserRouter([
@@ -63,6 +64,10 @@ export const routes=createBrowserRouter([
         {
             path:'/dashboard/addProduct',
             element:<AdminRoute><AddProduct></AddProduct></AdminRoute>
+        },
+        {
+            path:'/dashboard/manageProducts',
+            element:<AdminRoute><ManageProducts></ManageProducts></AdminRoute>
         }
 
     ]

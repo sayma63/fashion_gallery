@@ -1,17 +1,19 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const AddProduct = () => {
     const { register,formState:{errors}, handleSubmit,reset } = useForm();
     const imageHostKey= process.env.REACT_APP_imgbb_key;
+    const navigate=useNavigate()
     console.log(imageHostKey);
     const handleAddProduct =(data)=>{
         console.log(data)
         const image=data.image[0];
         const formData=new FormData();
         formData.append('image',image);
-        const url=`https://api.imgbb.com/1/upload?expiration=600&key=${imageHostKey}`;
+        const url=`https://api.imgbb.com/1/upload?key=${imageHostKey}`;
         fetch(url,{
             method:"POST",
             body:formData
@@ -28,7 +30,7 @@ const AddProduct = () => {
                     category:data.category,
                    
                     description:data.description,
-                    image:imgData.data.url
+                    img:imgData.data.url
 
                 }
                 fetch('http://localhost:5000/products',{
@@ -44,8 +46,9 @@ const AddProduct = () => {
                 .then(result=>{
                     console.log(result)
                     if(result.insertedId){
-                        toast.success('product added successfully');
+                        toast.success(`${data.name} added successfully`);
                         reset();
+                        navigate('/dashboard/manageProducts')
                     }
                     else{
                         toast.error('product not added')

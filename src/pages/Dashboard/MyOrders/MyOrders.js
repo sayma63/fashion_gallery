@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import {useQuery} from 'react-query'
 import { AuthContext } from '../../../contexts/AuthProvider';
+import Loading from '../../../Loading/Loading';
 
 const MyOrders = () => {
     const {user}=useContext(AuthContext);
     const url=`http://localhost:5000/orders?email=${user?.email}`;
-    const {data:orders=[]}=useQuery({
+    const {data:orders=[],isLoading}=useQuery({
         queryKey:['orders',user?.email],
         queryFn: async ()=>{
             const res= await fetch(url,{
@@ -17,6 +18,9 @@ const MyOrders = () => {
             return data;
         }
     });
+    if(isLoading){
+      return <Loading></Loading>
+    }
     return (
         <div>
             <h1 className='text-3xl text-primary font-bold mb-4'>My Orders</h1>
