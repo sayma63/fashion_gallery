@@ -8,12 +8,13 @@ const ShowProducts = () => {
              <h1 className='text-5xl text-center uppercase text-primary  '><i>Features Products</i></h1>
     
               <div className=' flex gap-x-5  '>
-                  <div className=' lg:px-5 lg:w-[20%] w-full lg:flex   '>
+                  <div className=' lg:px-5 lg:w-[20%] w-full hidden   '>
                   <LeftSideNav></LeftSideNav>
                     
                   </div>
-                  <div className=' w-[75%] lg:w-full '>
+                  <div className=' w-[75%] lg:w-full mx-auto '>
                   <AvailableProduct></AvailableProduct>
+                  {/* lg:w-full */}
                        
     
                   </div>

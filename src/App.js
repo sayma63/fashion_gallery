@@ -14,9 +14,17 @@ function App() {
     AOS.init();
   },[])
   
+  
   return (
     <div className="max-w-[1440px]">
-      <RouterProvider router={routes}></RouterProvider>
+    
+      <RouterProvider router={routes}
+     
+      
+      > 
+
+
+      </RouterProvider>
     
       <Toaster></Toaster>
      

@@ -15,7 +15,7 @@ const AvailableSingleProduct = ({product}) => {
     <p className='text-2xl text-[orange]'>Price:<span className='text-4xl' >৳</span>{price}</p>
     <div class="card-actions justify-end">
       <Link to={`/product/${_id}`} >
-      <button  class="btn btn-primary">Buy Now</button>
+      <button  class="btn btn-primary">Add to Cart</button>
       </Link>
     </div>
   </div>
