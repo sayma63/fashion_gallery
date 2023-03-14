@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {useQuery} from 'react-query'
+import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider';
 import Loading from '../../../Loading/Loading';
 
@@ -33,25 +34,35 @@ const MyOrders = () => {
         <th>Name</th>
         <th>Email</th>
         <th>Product Name</th>
+
         <th>Category</th>
+        <th>Payment</th>
         
       </tr>
     </thead>
     <tbody>
       
-    {
-            orders?.map((order,index)=><tr key={order._id}>
+      {
+            orders.map((order,index)=><tr key={order._id}>
                 <th>{index+1}</th>
                 <td>{order.customer}</td>
                 <td>{order.email}</td>
                 <td>{order.productName}</td>
                 <td>{order.category}</td>
+                <td>
+                  {
+                    order.price && !order.paid && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-primary btn-sm'>Pay</button></Link>
+                  }
+                  {
+                     order.price && order.paid && <span className='text-primary'>Paid</span>
+                  }
+                </td>
                 
               </tr>
               
               )
-        }
-      
+        }  
+       
       
     </tbody>
   </table>
