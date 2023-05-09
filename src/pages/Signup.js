@@ -30,7 +30,7 @@ const Signup = () => {
 
         .then(result=>{
             const user =result.user;
-            console.log(user);
+            console.log("User here",user);
                  toast('User created successfully.')
                  reset();
                  handleEmailVerification()
@@ -38,11 +38,12 @@ const Signup = () => {
                  
                  
             const userInfo ={
-                displayName:data.name
+                displayName:data?.name
             }
+            console.log(userInfo)
             updateUser(userInfo)
             .then(()=>{
-                saveUser(data.name, data.email);
+                saveUser(data?.name, data.email);
             })
             .catch(err=>console.log(err))
 

@@ -18,6 +18,7 @@ import ManageProducts from "../pages/Dashboard/ManageProducts/ManageProducts";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import DisplayError from "../Shared/DisplayError/DisplayError";
 import ManageAllOrders from "../pages/Dashboard/ManageAllOrders/ManageAllOrders";
+import AddReview from "../pages/Dashboard/AddReview/AddReview";
 
 
 export const routes=createBrowserRouter([
@@ -65,6 +66,10 @@ export const routes=createBrowserRouter([
         {
             path:'/dashboard/allUsers',
             element:<AdminRoute><AllUsers></AllUsers></AdminRoute>
+        },
+        {
+            path:'/dashboard/addReview',
+            element:<AddReview></AddReview>
         },
         {
             path:'/dashboard/addProduct',
