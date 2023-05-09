@@ -42,8 +42,9 @@ const MyOrders = () => {
     </thead>
     <tbody>
       
-      {
-            orders.map((order,index)=><tr key={order._id}>
+      {  
+             orders &&
+            orders?.map((order,index)=><tr key={order._id}>
                 <th>{index+1}</th>
                 <td>{order.customer}</td>
                 <td>{order.email}</td>
