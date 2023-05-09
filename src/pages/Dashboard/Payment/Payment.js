@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData, useNavigation } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import {loadStripe} from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import CheckoutForm from './CheckoutForm';
@@ -8,16 +8,16 @@ const Payment = () => {
     const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
     console.log(stripePromise)
     const order= useLoaderData();
-    const navigation= useNavigation()
-    if(navigation.state === "loading"){
-        return <div>
-            <div className='h-screen flex justify-center items-center'>
-        <button className="btn loading">loading</button>
-   </div>
-        </div>
+//     const navigation= useNavigation()
+//     if(navigation.state === "loading"){
+//         return <div>
+//             <div className='h-screen flex justify-center items-center'>
+//         <button className="btn loading">loading</button>
+//    </div>
+//         </div>
 
         
-    }
+//     }
     console.log(order);
     const {productName,price}=order
     return (

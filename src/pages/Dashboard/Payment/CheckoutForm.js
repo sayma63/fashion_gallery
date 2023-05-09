@@ -10,8 +10,7 @@ const CheckoutForm = ({order}) => {
     const [clientSecret, setClientSecret] = useState("");
     const stripe = useStripe();
     const elements=useElements();
-    const {_id,price,customer,
-        email}=order;
+    const {_id,price,customer,email}=order;
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
         fetch("http://localhost:5000/create-payment-intent", {
