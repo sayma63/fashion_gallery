@@ -17,6 +17,7 @@ import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 import ManageProducts from "../pages/Dashboard/ManageProducts/ManageProducts";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import DisplayError from "../Shared/DisplayError/DisplayError";
+import ManageAllOrders from "../pages/Dashboard/ManageAllOrders/ManageAllOrders";
 
 
 export const routes=createBrowserRouter([
@@ -74,8 +75,12 @@ export const routes=createBrowserRouter([
             element:<AdminRoute><ManageProducts></ManageProducts></AdminRoute>
         },
         {
+            path:'/dashboard/manageAllOrders',
+            element:<AdminRoute><ManageAllOrders></ManageAllOrders></AdminRoute>
+        },
+        {
             path:'/dashboard/payment/:id',
-            element:<AdminRoute><Payment></Payment></AdminRoute>,
+            element:<Payment></Payment>,
 
             loader:({params})=>fetch(`http://localhost:5000/orders/${params.id}`)
         }
